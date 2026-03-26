@@ -1,0 +1,26 @@
+{
+  "model": "claude-sonnet-4-20250514",
+  "agents": {
+    "foundation": ".claude/agents/agent-foundation.md",
+    "scanner":    ".claude/agents/agent-scanner.md",
+    "math":       ".claude/agents/agent-math.md",
+    "ui":         ".claude/agents/agent-ui.md",
+    "polish":     ".claude/agents/agent-polish.md"
+  },
+  "context_files": [
+    "CLAUDE.md"
+  ],
+  "permissions": {
+    "allow": [
+      "Read(**)",
+      "Write(GreenReader/**/*.swift)",
+      "Write(GreenReaderTests/**/*.swift)",
+      "Write(.claude/**)"
+    ],
+    "deny": [
+      "Write(*.xcodeproj/**)",
+      "Bash(rm -rf **)",
+      "Bash(git push **)"
+    ]
+  }
+}
