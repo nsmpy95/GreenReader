@@ -1,10 +1,16 @@
 import Observation
+import ARKit
 
 // MARK: - ScanViewModel
 // Single source of truth for all app state.
 // All modules read from and write to this object.
 @Observable
 final class ScanViewModel {
+
+    // ARSCNView reference — set by M1, used by M2 to start/stop the session.
+    // Stored as an unowned-optional to avoid a retain cycle with the view.
+    weak var arView: ARSCNView? = nil
+
     // Core state machine
     var scanState: ScanState = .idle
 
