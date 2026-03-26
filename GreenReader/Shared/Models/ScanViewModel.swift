@@ -1,13 +1,5 @@
 import Observation
 
-// MARK: - ScanState
-enum ScanState: Equatable {
-    case idle
-    case scanning
-    case processing
-    case results
-}
-
 // MARK: - ScanViewModel
 // Single source of truth for all app state.
 // All modules read from and write to this object.

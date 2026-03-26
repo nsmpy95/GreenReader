@@ -38,7 +38,7 @@ GreenReader/
 │   │   └── M5_LaunchPolish/     # Onboarding, settings, lifecycle
 │   └── Shared/
 │       ├── Models/            # MeshData, SlopeData, ScanViewModel
-│       └/Utilities/           # DesignTokens, extensions
+│       └── Utilities/         # DesignTokens, extensions
 └── GreenReaderTests/          # Unit tests for M3 math
 ```
 

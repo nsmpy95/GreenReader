@@ -1,5 +1,5 @@
 {
-  "model": "claude-sonnet-4-20250514",
+  "model": "claude-sonnet-4-6",
   "agents": {
     "foundation": ".claude/agents/agent-foundation.md",
     "scanner":    ".claude/agents/agent-scanner.md",
